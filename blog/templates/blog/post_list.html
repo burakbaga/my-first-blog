@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Burak Blog</title>
+    <title>Hürriyet Köşe Yazıları</title>
 </head>
     <body>
         <div>
-            <h1><a href="/">Burak Bagatarhan Blog</a></h1>
+            <h1><a href="/"></a></h1>
         </div>
 
         {% for post in posts%}
         <div>
             <p>{{post.published_date}}</p>
-            <h2><a href="">{{post.title}}</a></h2>
+            <strong><h2><a href="">{{post.title}}</a></h2></strong>
             <p>{{post.text}}</p>
+            <br>
         </div>
         {% endfor %}
 
