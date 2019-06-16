@@ -8,25 +8,16 @@
         <div>
             <h1><a href="/">Burak Bagatarhan Blog</a></h1>
         </div>
+
+        {% for post in posts%}
         <div>
-            <p>published: 17.06.2019, 12.00</p>
-            <h2><a href="">ilk blog</a></h2>
-            <p>bu ilk blog sssskdaldşfdfksdşfdsşfkjsdfkjsdfşjdsşjfşdsfkdşsfdsf</p>
-
-
+            <p>{{post.published_date}}</p>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.text}}</p>
         </div>
+        {% endfor %}
 
-        <div>
-            <p>published: 17.06.2019, 12.25</p>
-            <h2><a href="">ikinci gönderi</a></h2>
-            <p>bir varmış fdsfdsfdsfdsfds</p>
-        </div>
 
-      <div>
-
-            <h1>SA justin KARDEŞ</h1>
-
-      </div>
 
 
 
