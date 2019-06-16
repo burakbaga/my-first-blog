@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hürriyet Köşe Yazıları</title>
+    <title>Köşe Yazıları</title>
 </head>
     <body>
         <div>
-            <h1><a href="/"></a></h1>
+            <h1><a href="/"><strong>Hürriyet Köşe Yazıları</strong></a></h1>
         </div>
 
         {% for post in posts%}
         <div>
             <p>{{post.published_date}}</p>
-            <strong><h2><a href="">{{post.title}}</a></h2></strong>
+            <h2><a href=""><strong>{{post.title}}</strong></a></h2>
             <p>{{post.text}}</p>
             <br>
         </div>
